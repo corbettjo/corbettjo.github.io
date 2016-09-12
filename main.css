@@ -1,0 +1,257 @@
+/* Universal settings */
+
+html {
+    height: 100%;
+    margin: auto;
+    overflow-y: scroll;
+}
+div[class^="col"] {
+    /* clears automatic padding given by bootstrap */
+    padding: 0px;
+}
+img {
+    width: 100%;
+}
+
+/* Homepage */
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.homenav ul {
+    font-size: 18px;
+    list-style-type: none;
+}
+.homenav li {
+    padding-bottom: 5px;
+}
+.socialMedia {
+    margin-top: 20px;
+}
+#social {
+    text-decoration: none;
+    padding: 5px;
+}
+a svg {
+    transition: .3s;
+    width: 30px;
+    fill: black;
+}
+#insta:hover {
+    fill: #125688;
+}
+#git:hover {
+    fill: #6cc644;
+}
+#youtube:hover {
+    fill: #bb0000
+}
+
+/* Navigation */
+
+#logo {
+    width: 60px;
+    margin-bottom: 5px;
+}
+.nav_list {
+    /* Removes dots from list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    text-decoration: none;
+    transition: color .5s;
+}
+li a:hover {
+    color: coral;
+    text-decoration: none;
+}
+.nav_link {
+    color: BABABA;
+    transition: color .3s;
+}
+.nav_link.active {
+    font-family: Courier, bold;
+    color: 333333;
+}
+
+/* Body */
+
+.page {
+    height: 100%;
+    text-align: center;
+    font-family: Courier new;
+    color: 333333;
+}
+h1 {
+    font-size: 40px;
+    font-family: Montserrat;
+    color: black;
+    /* reduces space under h1 */
+    text-align: center;
+    padding-bottom: 10px;
+}
+p {
+    font-family: Courier new;
+}
+.linkText {
+    z-index: 1;
+    color: white;
+    font-family: Montserrat;
+    font-size: 32;
+    /* Center of text box */
+    text-align: center;
+    /* Let's you put it exactly where you want to */
+    position: absolute;
+    /* Moves it down to the center of the div */
+    top: 40%;
+    /* Lets the text box fill the entire width of the div */
+    width: 100%;
+}
+.thumbPhoto {
+    transition: all .3s;
+    background: none;
+    position: relative;
+}
+.thumbPhoto:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -moz-transition: background .3s linear;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
+}
+.thumbPhoto:hover:after {
+    background: rgba(0, 0, 0, 0.5);
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 50%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.meWrapper {
+    max-height: 300px;
+}
+.meWrapper img {
+    max-width: 300px;
+    /* These 3 below working together centers the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+
+footer {
+    font-size: 12;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Photoswipe */
+
+.my-gallery figcaption {
+    display: none;
+}
+
+/* Large screen settings */
+
+@media (min-width: 992px) {
+    html {
+        width: 960px;
+    }
+    .nav {
+        padding-top: 30px;
+        position: fixed;
+        text-align: right;
+        margin-left: 5px;
+    }
+    .pageHeader {
+        margin: 12.5px;
+    }
+    #intro {
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    }
+    .tile {
+        display: inline-block;
+        padding: 12.5px;
+    }
+    .my-gallery figure {
+        padding: 12.5px;
+    }
+    .videoWrapper iframe {
+        padding: 12.5px;
+    }
+    .codeImage {
+        padding: 12.5px;
+    }
+    .bio {
+        text-align: left;
+        padding-left: 25px;
+    }
+}
+
+/* Small screen settings */
+
+@media (max-width: 991px) {
+    html {
+        width: auto;
+    }
+    .page {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .nav {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    li.nav_item {
+        display: inline;
+    }
+    li.logo {
+        padding-bottom: 10px;
+    }
+    .pageHeader {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .tile {
+        display: inline-block;
+        padding: 15px;
+    }
+    .meWrapper {
+        /* To add space when it's stacked */
+        margin-bottom: 30px;
+    }
+    .my-gallery figure {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .videoWrapper iframe {
+        padding: 15px;
+    }
+    .codeImage {
+        padding: 15px;
+        max-width: 500px;
+    }
+}

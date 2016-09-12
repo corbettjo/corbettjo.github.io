@@ -29,7 +29,7 @@ img {
     padding-bottom: 5px;
 }
 .socialMedia {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 #social {
     text-decoration: none;
@@ -87,13 +87,20 @@ li a:hover {
     font-family: Courier new;
     color: 333333;
 }
+.pageHeader h1 {
+    padding-bottom: 10px;
+}
 h1 {
     font-size: 40px;
     font-family: Montserrat;
     color: black;
     /* reduces space under h1 */
     text-align: center;
-    padding-bottom: 10px;
+}
+h2 {
+    font-size: 24px;
+    font-family: Montserrat;
+    color: black;
 }
 p {
     font-family: Courier new;

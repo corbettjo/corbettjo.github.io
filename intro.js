@@ -1,34 +1,34 @@
-// click "Run" to replay
-
-var $body = $(".landing");
+var body = $(".landingBackground");
 
 var loading = [
 	{
-		elements: $body,
+		elements: body,
 		properties: {
-			height: '0%',
-			width: '0%'
+			height: '10%'
 		}
 	},
 	{
-		elements: $body,
+		elements: body,
 		properties: {
-			width: '0%'
+			hight: '10%',
+			width: '300px'
 		}
 	},
 	{
-		elements: $body,
+		elements: body,
 		properties: {
-			height: '50%',
-			width: '30%'
+			height: '45%'
 		},
 		options: {
 			complete: function () {
-				$('.wrap').velocity('transition.slideUpIn');
-				$('img').velocity('transition.flipYIn');
+				{
+					$(".landing").fadeIn();
+				}
 			}
 		}
-  }
+	}
+
 ];
 
+$(".landing").hide();
 $.Velocity.RunSequence(loading);

@@ -283,7 +283,7 @@ footer {
 		padding: 15px;
 		max-width: 500px;
 	}
-	img {
-		max-width: 700px;
+	.linkText {
+		font-size: 80px;
 	}
 }

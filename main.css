@@ -20,13 +20,16 @@ img {
 	background-image: url(Images/background.jpg);
 	background-size: cover;
 }
-.landing {}
+.landing {
+	padding: 40px;
+}
 .landingBackground {
 	background-color: white;
 }
 .landing h1 {
 	margin: auto;
 	padding-bottom: 15px;
+	width: 100%;
 }
 .center {
 	position: absolute;
@@ -251,9 +254,6 @@ footer {
 		font-size: 30px;
 		padding-top: 30px;
 	}
-	.homenav h1 {
-		font-size: 60px;
-	}
 	.homenav ul {
 		font-size: 20px;
 		list-style-type: none;
@@ -266,7 +266,7 @@ footer {
 		font-size: 80px;
 	}
 	.landing h1 {
-		font-size: 60px;
+		font-size: 50px;
 	}
 	p {
 		font-size: 36px;

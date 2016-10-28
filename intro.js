@@ -9,8 +9,6 @@ var loading = [
 			height: '0%',
 			width: '0%'
 		}
-
-
 	},
 	{
 		elements: $body,

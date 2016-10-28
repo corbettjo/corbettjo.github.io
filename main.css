@@ -161,11 +161,7 @@ p {
 	width: 100%;
 	height: 100%;
 }
-.meWrapper {
-	max-height: 300px;
-}
-.meWrapper img {
-	max-width: 300px;
+#meWrapper img {
 	/* These 3 below working together centers the image */
 	display: block;
 	margin-left: auto;
@@ -175,8 +171,6 @@ p {
 /* Footer */
 
 footer {
-	font-size: 12;
-	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -192,6 +186,9 @@ footer {
 @media (min-width: 992px) {
 	html {
 		width: 960px;
+	}
+	h1 {
+		margin-top: 40px;
 	}
 	.nav {
 		padding-top: 30px;
@@ -227,6 +224,13 @@ footer {
 		text-align: left;
 		padding-left: 25px;
 	}
+	#meWrapper img {
+		max-width: 300px;
+	}
+	footer {
+		padding-top: 20px;
+		font-size: 12;
+	}
 }
 
 /* Small screen settings */
@@ -251,7 +255,7 @@ footer {
 		font-size: 80px;
 	}
 	p {
-		font-size: 30px;
+		font-size: 36px;
 	}
 	li.nav_item {
 		display: inline;
@@ -268,9 +272,9 @@ footer {
 		display: inline-block;
 		padding: 15px;
 	}
-	.meWrapper {
+	#meWrapper {
 		/* To add space when it's stacked */
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 	.my-gallery figure {
 		padding-bottom: 15px;
@@ -285,5 +289,12 @@ footer {
 	}
 	.linkText {
 		font-size: 80px;
+	}
+	#meWrapper img {
+		max-width: 500px;
+	}
+	footer {
+		padding-top: 40px;
+		font-size: 24;
 	}
 }

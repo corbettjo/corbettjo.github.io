@@ -67,7 +67,7 @@ a svg {
 .nav_list {
 	/* Removes dots from list */
 	list-style-type: none;
-	margin: 0;
+	margin-left: -5px;
 	padding: 0;
 }
 li a {
@@ -102,7 +102,7 @@ li a:hover {
 	padding-bottom: 10px;
 }
 h1 {
-	font-size: 40px;
+	font-size: 48px;
 	font-family: Montserrat;
 	color: black;
 	/* reduces space under h1 */
@@ -191,11 +191,39 @@ footer {
 		width: 960px;
 	}
 	h1 {
-		margin-top: 40px;
+		margin-top: 30px;
 	}
-	.homenav ul {
+	hr {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-left: 0;
+		border-top-width: 3px;
+		border-color: rgb(52, 52, 52);
+		width: 100px;
+	}
+	.pageContent img {
+		max-width: 1500px;
+	}
+	.pageContent p {
+		text-align: left;
+	}
+	.pageContent h2 {
+		text-align: left;
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
+	.pageContent #lefthalfimg {
+		padding-right: 12.5px;
+	}
+	.pageContent #righthalfp {
+		padding-left: 12.5px;
+	}
+	.pageContent .homenav ul {
 		font-size: 18px;
 		list-style-type: none;
+	}
+	.pageContent #fullp {
+		margin-top: 20px;
 	}
 	.nav {
 		padding-top: 30px;

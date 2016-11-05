@@ -202,28 +202,33 @@ footer {
 		border-color: rgb(52, 52, 52);
 		width: 100px;
 	}
-	.pageContent img {
-		max-width: 1500px;
-	}
+	.pageContent img {}
 	.pageContent p {
 		text-align: left;
 	}
 	.pageContent h2 {
 		text-align: left;
 		font-size: 28px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	.pageContent #lefthalfimg {
 		padding-right: 12.5px;
+		padding-bottom: 12.5px;
 	}
 	.pageContent #righthalfp {
 		padding-left: 12.5px;
 	}
+	.pageContent #lefthalfp {
+		padding-left: 0px;
+		padding-right: 12.5px;
+	}
 	.pageContent #righthalfimg {
 		padding-left: 12.5px;
+		padding-bottom: 12.5px;
 	}
 	.pageContent #fullimg {
-		padding: 12.5px;
+		padding-top: 12.5px;
+		padding-bottom: 12.5px;
 	}
 	.pageContent #halfimg {
 		padding: 12.5px;
@@ -233,9 +238,10 @@ footer {
 		list-style-type: none;
 	}
 	.pageContent #fullp {
-		margin-top: 20px;
-		margin-bottom: 10px;
-		padding: 0px;
+		padding-top: 12.5px;
+		padding-bottom: 12.5px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.nav {
 		padding-top: 30px;

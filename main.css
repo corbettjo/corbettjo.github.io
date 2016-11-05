@@ -213,6 +213,12 @@ footer {
 	}
 	.pageContent #lefthalfimg {
 		padding-right: 12.5px;
+		padding-top: 12.5px;
+		padding-bottom: 12.5px;
+	}
+	.pageContent #righthalfimg {
+		padding-left: 12.5px;
+		padding-top: 12.5px;
 		padding-bottom: 12.5px;
 	}
 	.pageContent #righthalfp {
@@ -221,10 +227,6 @@ footer {
 	.pageContent #lefthalfp {
 		padding-left: 0px;
 		padding-right: 12.5px;
-	}
-	.pageContent #righthalfimg {
-		padding-left: 12.5px;
-		padding-bottom: 12.5px;
 	}
 	.pageContent #fullimg {
 		padding-top: 12.5px;

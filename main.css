@@ -313,6 +313,19 @@ footer {
 	h1 {
 		font-size: 80px;
 	}
+	h2 {
+		font-size: 40px;
+	}
+	hr {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		border-top-width: 6px;
+		border-color: rgb(52, 52, 52);
+		width: 100px;
+	}
+	.pageContent img {
+		padding: 20px;
+	}
 	.landing h1 {
 		font-size: 50px;
 	}

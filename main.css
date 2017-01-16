@@ -76,7 +76,7 @@ li a {
 	transition: color .5s;
 }
 li a:hover {
-	color: coral;
+	color: green;
 	text-decoration: none;
 }
 .nav_link {
@@ -84,7 +84,7 @@ li a:hover {
 	transition: color .3s;
 }
 .nav_link.active {
-	font-family: Courier, bold;
+	font-family: 'Source Code Pro', bold;
 	color: 333333;
 }
 #hci {
@@ -96,7 +96,7 @@ li a:hover {
 .page {
 	height: 100%;
 	text-align: center;
-	font-family: Courier new;
+	font-family: 'Source Code Pro', monospace;
 	color: 333333;
 }
 .pageHeader h1 {
@@ -115,7 +115,8 @@ h2 {
 	color: black;
 }
 p {
-	font-family: Courier new;
+	font-family: 'Source Code Pro', monospace;
+	color: #323232;
 }
 .linkText {
 	z-index: 1;

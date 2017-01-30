@@ -24,10 +24,11 @@ a {
 	background-size: cover;
 }
 .landing {
-	padding: 40px;
+	width: 100%;
 }
 .landingBackground {
 	background-color: white;
+	width: 300px;
 }
 .landing h1 {
 	margin: auto;

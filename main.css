@@ -42,8 +42,11 @@ a {
 	transform: translate(-50%, -50%);
 }
 .homenav li {
-	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
 	font-size: 18px;
+	display: inline;
 }
 .socialMedia {
 	margin-top: 15px;
@@ -120,7 +123,11 @@ h2 {
 }
 p {
 	font-family: 'Source Code Pro', monospace;
+	font-size: 12px;
 	color: #323232;
+}
+#description {
+	text-align: left;
 }
 .linkText {
 	z-index: 1;
@@ -207,7 +214,11 @@ footer {
 		border-color: rgb(52, 52, 52);
 		width: 100px;
 	}
+	#landingTitle {
+		margin-bottom: 0px;
+	}
 	.pageContent img {}
+	.pageContent h1 {}
 	.pageContent p {
 		text-align: left;
 	}
@@ -308,7 +319,7 @@ footer {
 		padding-top: 30px;
 	}
 	.homenav ul {
-		font-size: 20px;
+		font-size: 30px;
 		list-style-type: none;
 	}
 	#logo {
@@ -331,14 +342,12 @@ footer {
 	.pageContent img {
 		padding: 20px;
 	}
-	.landing h1 {
-		font-size: 50px;
-	}
 	p {
-		font-size: 36px;
+		font-size: 30px;
 	}
 	li.nav_item {
 		display: inline;
+		font-size: 30px;
 	}
 	li.logo {
 		padding-bottom: 10px;

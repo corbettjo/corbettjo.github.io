@@ -1,119 +1,80 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
-	<title>Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Jon Corbett's portfolio site.">
+	<meta name="keywords" content="jon, corbett, web, development, front-end, design, interactive media, filmmmaking, boston, photography">
+	<meta name="author" content="Jon Corbett">
+	<!-- Website title -->
+	<title>Jon Corbett</title>
+	<!-- Website favicon -->
 	<link rel="icon" href="/Images/icon.png">
-
-	<!-- Montserrat -->
+	<!-- Montserrat Font -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-	<!-- Source Code Pro -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600" rel="stylesheet">
 
 	<!-- Bootstrap core CSS -->
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
 	<script src="/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Main style sheet -->
-	<link rel="stylesheet" href="/main.css">
+	<!-- Google Analytics -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+		ga('create', 'UA-72533758-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
+
+	<!-- CSS -->
+	<link href="main.css" rel="stylesheet">
+
+	<meta property="og:image" content="/Images/prev.jpg" />
 </head>
 
-<body class="page">
-	<div class="col-md-12 col-sm-12 col-xs-12">
-		<h1>Jon Corbett</h1>
-		<nav class="homenav">
-			<ul class="nav_list">
-				<li class="nav_item">
-					<a class="nav_link active" href="/design.html">Work</a>
-				</li>
-				<li class="nav_item">
-					<a class="nav_link" href="/about.html">About</a>
-				</li>
-				<li class="nav_item">
-					<a class="nav_link" href="/Images/About/Resume.pdf">Resume</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
 
-	<div class="col-md-1"></div>
-	<div class="col-md-10 col-sm-12 col-xs-12 pageContent">
+<body class="page" id="home">
+	<div class="landingBackground center panel">
+		<div class="landing center panel-body">
+			<h1>
+            Jon Corbett
+        	</h1>
 
-		<div class="col-md-12">
-			<div class="col-md-12" id="halfimg">
-				<h2 id="landingTitle">Design</h2>
-			</div>
-			<div class="col-md-6" id="halfimg">
-				<p>I picked up design about two years ago, creating snapchat geofilters for fun. However, as I learned more about the art, I realized how important of a problem solving tool it could be.
-					<br>
-					<b><a href="design.html">See more -></a></b>
-				</p>
-			</div>
+			<nav class="homenav">
+				<ul class="nav_list">
+					<li>
+						<a class="nav_link" href="/photo.html">Photo</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/video.html">Video</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/design.html">Design</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/about.html">About</a>
+					</li>
+				</ul>
+			</nav>
 
-			<div class="col-md-6" id="tileContainer">
-				<div class="tile">
-					<a href="/Design/design-hellola.html">
-						<div class="thumbPhoto">
-							<img src="/Images/Design/HelloLA/helloLA.jpg">
-							<div class="linkText">Hello LA</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-6">
-			<div class="col-md-12" id="halfimg">
-				<h2 id="landingTitle">Photo</h2>
-			</div>
-
-			<div class="col-md-6" id="halfimg">
-				<p>I got my first camera in 2011. None of these photos are from 2011. Most of them are from the past 3 years, and are organized by location.
-					<br>
-					<b><a href="photo.html">See more -></a></b>
-				</p>
-			</div>
-			<div class="col-md-6" id="halfimg">
-				<img src="Images/Boston/bos9.jpg">
-			</div>
-		</div>
-
-		<div class="col-md-6" id="video">
-			<div class="col-md-12" id="halfimg">
-				<h2 id="landingTitle">Video</h2>
-			</div>
-			<div class="col-md-6" id="halfimg">
-				<p>I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft. Although I haven't been able to film as much as I've wanted to, I think It's a beautiful way to tell a story, and evoke emotion.
-					<br>
-					<b><a href="video.html">See more -></a></b>
-				</p>
-
-			</div>
-
-			<div class="col-md-6 col-sm-12">
-				<div class="videoWrapper">
-					<iframe width="1920" height="1080" src="//www.youtube.com/embed/PYyz4teTzNc?showinfo=0" frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
-
-				<div class="videoWrapper">
-					<iframe width="1920" height="1080" src="//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0" frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
-			</div>
-
-		</div>
-
-
-
-		<footer class="footer col-md-12 col-sm-12 col-xs-12">
-			© Jon Corbett, 2017
 			<div class="socialMedia">
 				<a id="social" href="http://www.instagram.com/joco.io" target="_blank">
 					<svg id="insta" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -147,8 +108,10 @@
 					</svg>
 				</a>
 			</div>
-		</footer>
+		</div>
 	</div>
+
+	<script src="intro.js"></script>
 </body>
 
 </html>

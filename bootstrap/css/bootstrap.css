@@ -60,7 +60,6 @@ dfn {
   font-style: italic;
 }
 h1 {
-	font-family: 'Montserrat';
   margin: .67em 0;
   font-size: 2em;
 }
@@ -1185,7 +1184,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Montserrat';
   font-weight: 500;
   line-height: 1.1;
   color: inherit;

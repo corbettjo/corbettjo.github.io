@@ -35,7 +35,7 @@ a {
 }
 .landing h1 {
 	margin: auto;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	width: 100%;
 }
 .center {
@@ -220,6 +220,10 @@ footer {
 	}
 	#landingTitle {
 		margin-bottom: 0px;
+		padding-left: 12.5px;
+		padding-right: 12.5px;
+		padding-bottom: 0px;
+		padding-top: 10px;
 	}
 	.pageContent img {}
 	.pageContent h1 {}

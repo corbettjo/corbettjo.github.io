@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600');
 
 /* Universal settings */
@@ -7,6 +7,7 @@ html {
 	height: 100%;
 	margin: auto;
 	overflow-y: scroll;
+	-webkit-font-smoothing: antialiased;
 }
 div[class^="col"] {
 	/* clears automatic padding given by bootstrap */
@@ -21,23 +22,6 @@ a {
 
 /* Homepage */
 
-#home {
-	background: no-repeat center center fixed;
-	background-image: url(Images/background.jpg);
-	background-size: cover;
-}
-.landing {
-	width: 100%;
-}
-.landingBackground {
-	background-color: white;
-	width: 300px;
-}
-.landing h1 {
-	margin: auto;
-	padding-bottom: 10px;
-	width: 100%;
-}
 .center {
 	position: absolute;
 	top: 50%;
@@ -116,6 +100,7 @@ li a:hover {
 h1 {
 	font-size: 48px;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	color: black;
 	/* reduces space under h1 */
 	text-align: center;
@@ -123,12 +108,14 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
 	color: black;
 }
 p {
-	font-family: 'Source Code Pro', monospace;
 	font-size: 12px;
-	color: #323232;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 300;
+	color: #000000;
 }
 #description {
 	text-align: left;
@@ -136,8 +123,9 @@ p {
 .linkText {
 	z-index: 10;
 	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 32;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	/* Center of text box */
 	text-align: center;
 	/* Let's you put it exactly where you want to */

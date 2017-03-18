@@ -3,6 +3,7 @@
 
 /* Universal settings */
 
+* {}
 html {
 	height: 100%;
 	margin: auto;
@@ -35,10 +36,6 @@ a {
 	text-align: center;
 	font-size: 18px;
 	display: inline;
-}
-.homenav #logo {
-	padding-top: 30px;
-	padding-bottom: 10px;
 }
 .socialMedia {
 	margin-top: 15px;
@@ -259,6 +256,10 @@ footer {
 		width: 60px;
 		margin-bottom: 5px;
 	}
+	.homenav #logo {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
 	.pageHeader {
 		margin: 12.5px;
 	}
@@ -308,9 +309,12 @@ footer {
 	}
 	#logo {
 		width: 150px;
-		margin-bottom: 5px;
 		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 20px;
+	}
+	.homenav #logo {
+		padding-top: 30px;
+		padding-bottom: 20px;
 	}
 	h1 {
 		font-size: 100px;
@@ -333,7 +337,7 @@ footer {
 	}
 	li.nav_item {
 		display: inline;
-		font-size: 30px;
+		font-size: 44px;
 	}
 	li.logo {
 		padding-bottom: 10px;

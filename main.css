@@ -302,20 +302,21 @@ footer {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-	.homenav ul .a {
-		font-size: 30px;
+	ul a {
+		font-size: 44px;
 		list-style-type: none;
 	}
 	#logo {
 		width: 150px;
 		margin-bottom: 5px;
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	h1 {
 		font-size: 100px;
 	}
 	h2 {
-		font-size: 72px;
+		font-size: 64px;
 	}
 	hr {
 		margin-top: 40px;
@@ -364,7 +365,7 @@ footer {
 		padding: 15px;
 	}
 	.linkText {
-		font-size: 80px;
+		font-size: 64px;
 	}
 	footer {
 		padding-top: 40px;

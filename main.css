@@ -7,7 +7,8 @@ html {
 	height: 100%;
 	margin: auto;
 	overflow-y: scroll;
-	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
 }
 div[class^="col"] {
 	/* clears automatic padding given by bootstrap */
@@ -34,6 +35,10 @@ a {
 	text-align: center;
 	font-size: 18px;
 	display: inline;
+}
+.homenav #logo {
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 .socialMedia {
 	margin-top: 15px;
@@ -64,6 +69,7 @@ a svg {
 	list-style-type: none;
 	margin-left: -5px;
 	padding: 0;
+	text-decoration: none;
 }
 li a {
 	text-decoration: none;
@@ -74,12 +80,12 @@ li a:hover {
 	text-decoration: none;
 }
 .nav_link {
-	color: BABABA;
+	color: #777777;
 	transition: color .3s;
 }
 .nav_link.active {
 	font-family: 'Source Code Pro', bold;
-	color: 333333;
+	color: green;
 }
 #hci {
 	margin-left: -10px;
@@ -95,11 +101,10 @@ li a:hover {
 }
 .pageHeader h1 {
 	padding-bottom: 10px;
-	font-family: 'Source Sans Pro', sans-serif;
 }
 h1 {
 	font-size: 48px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro';
 	font-weight: 700;
 	color: black;
 	/* reduces space under h1 */
@@ -107,8 +112,8 @@ h1 {
 }
 h2 {
 	font-size: 24px;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
 	color: black;
 }
 p {
@@ -121,40 +126,23 @@ p {
 	text-align: left;
 }
 .linkText {
-	z-index: 10;
 	color: white;
 	font-size: 32;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro';
 	font-weight: 700;
-	/* Center of text box */
 	text-align: center;
-	/* Let's you put it exactly where you want to */
-	position: absolute;
-	/* Moves it down to the center of the div */
-	top: 40%;
-	/* Lets the text box fill the entire width of the div */
-	width: 100%;
+	width: 100%
 }
 .thumbPhoto {
 	transition: all .3s;
 	background: none;
 	position: relative;
-	z-index: 0;
 }
 .thumbPhoto:hover {
 	transform: scale(1.04, 1.04);
 	transform-origin: center;
 	box-shadow: 0px 0px 40px grey;
 	transform-origin: center;
-}
-/ .thumbPhoto:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 }
 .videoWrapper {
 	position: relative;
@@ -169,12 +157,6 @@ p {
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-#meWrapper img {
-	/* These 3 below working together centers the image */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 .my-gallery img {
 	transition: all .3s;
@@ -320,23 +302,20 @@ footer {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-	.nav {
-		font-size: 30px;
-		padding-top: 30px;
-	}
-	.homenav ul {
+	.homenav ul .a {
 		font-size: 30px;
 		list-style-type: none;
 	}
 	#logo {
 		width: 150px;
 		margin-bottom: 5px;
+		padding-top: 30px;
 	}
 	h1 {
-		font-size: 80px;
+		font-size: 100px;
 	}
 	h2 {
-		font-size: 40px;
+		font-size: 72px;
 	}
 	hr {
 		margin-top: 40px;
@@ -369,7 +348,13 @@ footer {
 	}
 	#meWrapper {
 		/* To add space when it's stacked */
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 40px;
+	}
+	#meWrapper img {
+		max-width: 500px;
 	}
 	.my-gallery figure {
 		padding-bottom: 15px;
@@ -378,15 +363,8 @@ footer {
 	.videoWrapper iframe {
 		padding: 15px;
 	}
-	.codeImage {
-		padding: 15px;
-		max-width: 500px;
-	}
 	.linkText {
 		font-size: 80px;
-	}
-	#meWrapper img {
-		max-width: 500px;
 	}
 	footer {
 		padding-top: 40px;

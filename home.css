@@ -293,8 +293,14 @@ footer {
 		top: 50%;
 		transform: translateY(-50%);
 	}
+	.navContent {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 	ul a {
-		font-size: 36px;
+		font-size: 50px;
 		list-style-type: none;
 		display: block;
 	}
@@ -309,20 +315,20 @@ footer {
 		border-radius: 8px;
 	}
 	#logo {
-		width: 100px;
+		width: 200px;
 		padding-top: 30px;
 		padding-bottom: 20px;
 	}
 	h1 {
-		font-size: 80px;
+		font-size: 120px;
 		text-align: center;
 		margin: 0px;
 		padding: 0px;
 	}
 	p {
 		text-align: center;
-		font-size: 24;
-		padding: 20px;
+		font-size: 34;
+		padding: 60px;
 	}
 	h2 {
 		font-size: 64px;

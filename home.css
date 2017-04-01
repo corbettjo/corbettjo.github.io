@@ -292,7 +292,7 @@ footer {
 	ul a {
 		font-size: 50px;
 		list-style-type: none;
-		display: inline-block;
+		display: block;
 	}
 	.left {
 		position: absolute;

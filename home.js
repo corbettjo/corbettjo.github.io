@@ -1,3 +1,5 @@
 $(document).ready(function () {
-	$('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+		anchors: ['about', 'design', 'photo', 'video']
+	});
 });

@@ -262,13 +262,15 @@ footer {
 		font-size: 12;
 	}
 }
+
+/* Mobile */
+
 @media only screen and (max-width: 992px) {
 	html {
 		width: auto;
 	}
 	.homenav {
 		position: absolute;
-		top: -50%;
 		background: #ffffff;
 		width: 90%;
 		height: 90%;
@@ -299,7 +301,6 @@ footer {
 		background: #ffffff;
 		width: 90%;
 		height: 90%;
-		top: -50%;
 		left: 50%;
 		padding-top: 80px;
 		border-radius: 8px;

@@ -6,12 +6,16 @@
 	<title>Photo</title>
 	<link rel="icon" href="/Images/icon.png">
 
+	<!-- Montserrat -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<!-- Source Code Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600" rel="stylesheet">
+
 	<!-- Bootstrap core CSS -->
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/bootstrap/js/bootstrap.min.js"></script>
 
@@ -39,6 +43,9 @@
 					<a class="nav_link" href="/design.html">Design</a>
 				</li>
 				<li class="nav_item">
+					<a class="nav_link" href="/code.html">Code</a>
+				</li>
+				<li class="nav_item">
 					<a class="nav_link" href="/about.html">About</a>
 				</li>
 			</ul>
@@ -55,45 +62,45 @@
 			</div>
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6" id="tileContainer">
 			<div class="tile">
-				<a href="/Photo/photo-boston.html" id="1">
+				<a href="/Photo/photo-boston.html">
 					<div class="thumbPhoto">
-						<img src="/Images/Boston/bos.jpg" id="img1">
-						<div class="linkText center">Boston</div>
+						<img src="/Images/Boston/bos.jpg">
+						<div class="linkText">Boston</div>
 					</div>
 				</a>
 			</div>
 		</div>
 
-		<div class="col-md-6" id="2">
+		<div class="col-md-6" id="tileContainer">
 			<div class="tile">
 				<a href="/Photo/photo-rhody.html">
 					<div class="thumbPhoto">
-						<img src="/Images/Rhody/rhody.jpg" id="img2">
-						<div class="linkText center">Rhode Island</div>
+						<img src="/Images/Rhody/rhody.jpg">
+						<div class="linkText">Rhode Island</div>
 					</div>
 				</a>
 			</div>
 		</div>
 
-		<div class="col-md-6" id="3">
+		<div class="col-md-6" id="tileContainer">
 			<div class="tile">
 				<a href="/Photo/photo-euro.html">
 					<div class="thumbPhoto">
-						<img src="/Images/Europe/euro.jpg" id="img3">
-						<div class="linkText center">Europe</div>
+						<img src="/Images/Europe/euro.jpg">
+						<div class="linkText">Europe</div>
 					</div>
 				</a>
 			</div>
 		</div>
 
-		<div class="col-md-6 " id="4">
+		<div class="col-md-6 " id="tileContainer">
 			<div class="tile">
 				<a href="/Photo/photo-else.html">
 					<div class="thumbPhoto">
-						<img src="/Images/Else/else.jpg" id="img4">
-						<div class="linkText center">Everywhere Else</div>
+						<img src="/Images/Else/else.jpg">
+						<div class="linkText">Everywhere Else</div>
 					</div>
 				</a>
 			</div>
@@ -103,6 +110,7 @@
 			© Jon Corbett, 2017
 		</footer>
 	</div>
+
 </body>
 
 </html>

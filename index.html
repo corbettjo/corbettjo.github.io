@@ -1,130 +1,83 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Jon Corbett's portfolio site.">
+	<meta name="keywords" content="jon, corbett, web, development, front-end, design, interactive media, filmmmaking, boston, photography">
+	<meta name="author" content="Jon Corbett">
+	<!-- Website title -->
 	<title>Jon Corbett</title>
+	<!-- Website favicon -->
 	<link rel="icon" href="/Images/icon.png">
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<script src="jquery-3.2.1.js"></script>
-
-	<!-- Velocity.js -->
-	<script src="velocity.min.js"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Montserrat Font -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- Fullpage stylesheet -->
-	<link rel="stylesheet" type="text/css" href="FullPage/jquery.fullpage.css" />
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="/home.css">
+	<!-- Google Analytics -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	<!-- Main script -->
-	<script src="home.js"></script>
+		ga('create', 'UA-72533758-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
+
+	<!-- CSS -->
+	<link href="main.css" rel="stylesheet">
+
+	<meta property="og:image" content="/Images/prev.jpg" />
 </head>
 
-<body class="page landing">
-	<div class="warning">
-		<h1>Hey there!</h1>
-		<p>I'm Ty Pennington, and welcome to EXTREME MAKEOVER, WEBSITE EDITION! We've sent the current files away to Disneyworld, and are currently rebuilding their home from the ground up. Check back soon to see the final product!
-		</p>
-	</div>
-	<div id="fullpage">
-		<!-- Nav/About -->
-		<div class="col-xs-12 section" id="nav">
 
-			<div class="left">
-				<div class="content bio">
+<body class="page" id="home">
+	<div class="landingBackground center panel">
+		<div class="landing center panel-body">
+			<h1>
+            Jon Corbett
+        	</h1>
 
-					<h3>Hi there!</h3>
-					<br>
-					<p>I'm Jon, a Boston-based designer and developer with a soft spot for beautiful logos, well-documented code, and golden retreivers.
-						<br>
-						<br> I'm a Texan at heart, but am currently braving the elements at Northeastern University, majoring in Computer Science and Graphic Design. I love exploring the interseciton of creativity and technology, and using design thinking to solve challenging problems.
-						<br>
-						<br>If you want to reach out about employment, or to just say hello, feel free to <a href="mailto:hello@joncorbett.io?Subject=Hi there!" target="_top">get in touch</a>!
-						<br>
-						<br>Okay, thanks for stopping by! Feel free to grab a <b><a href="Images/About/Resume.pdf">resume</a></b> on your way out!
-					</p>
-				</div>
-			</div>
-
-			<div class="leftPhoto col-6 col-sm-6 col-lg-6 col-xl-6" id="me" style="background: url(Images/About/me.jpg)" onclick="shiftBack()">
-			</div>
-
-			<nav class="col-xs-6 col-sm-6 col-lg-6 col-xl-6 col-6 homenav">
-				<div class="navContent">
-					<div class="logo">
-						<img src="/Images/logo.svg" id="logo">
-					</div>
-					<ul class="nav_list">
-						<li class="nav_item">
-							<a class="nav_link" href="#design">Design</a>
-						</li>
-						<li class="nav_item">
-							<a class="nav_link" href="#photo">Photo</a>
-						</li>
-						<li class="nav_item">
-							<a class="nav_link" href="#video">Video</a>
-						</li>
-						<li class="nav_item">
-							<a class="nav_link" onclick="shift()">About</a>
-						</li>
-					</ul>
-				</div>
+			<nav class="homenav">
+				<ul class="nav_list">
+					<li>
+						<a class="nav_link" href="./photo.html">Photo</a>
+					</li>
+					<li>
+						<a class="nav_link" href="./video.html">Video</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/design.html">Design</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/code.html">Code</a>
+					</li>
+					<li>
+						<a class="nav_link" href="/about.html">About</a>
+					</li>
+				</ul>
 			</nav>
-		</div>
 
-
-		<!-- Design -->
-		<div class="col-xs-12 section" id="design">
-			<div class="left">
-				<div class="content">
-					<h1>Design</h1>
-					<p>I picked up design about two years ago, creating snapchat geofilters for fun. However, as I learned more about the art, I realized how important of a problem solving tool it could be.
-					</p>
-				</div>
-			</div>
-
-			<div class="rightPhoto col-6 col-sm-6 col-lg-6 col-xl-6" style="background: url(Images/Design/HelloLA/TracedMap90.png)"></div>
-		</div>
-
-		<!-- Photo -->
-		<div class="col-xs-12 section" id="photo">
-
-			<div class="leftPhoto col-6 col-sm-6 col-lg-6 col-xl-6" style="background: url(Images/Boston/bos9.jpg)"></div>
-
-			<div class="right col-6 col-sm-6 col-lg-6 col-xl-6">
-				<div class="content">
-					<h1>Photo</h1>
-					<p>I got my first camera in 2011. None of these photos are from 2011. Most of them are from the past 3 years, and are organized by location.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Video -->
-		<div class="col-xs-12 section" id="video">
-			<div class="left">
-				<div class="content">
-					<h1>Video</h1>
-					<p>I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.
-					</p>
-				</div>
-			</div>
-
-			<div class="rightPhoto col-6 col-sm-6 col-lg-6 col-xl-6" style="background: url(Images/video.jpg)"></div>
-		</div>
-
-		<footer class="col-xs-12 footer">
-			© Jon Corbett, 2017
 			<div class="socialMedia">
 				<a id="social" href="http://www.instagram.com/joco.io" target="_blank">
 					<svg id="insta" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -158,8 +111,10 @@
 					</svg>
 				</a>
 			</div>
-		</footer>
+		</div>
 	</div>
+
+	<script src="intro.js"></script>
 </body>
 
 </html>

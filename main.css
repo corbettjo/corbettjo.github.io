@@ -1,18 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600');
-
 /* Universal settings */
 
-* {}
 html {
+	height: 100%;
 	margin: auto;
 	overflow-y: scroll;
-}
-body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-	-moz-font-feature-settings: "liga" on;
 }
 div[class^="col"] {
 	/* clears automatic padding given by bootstrap */
@@ -24,17 +15,35 @@ img {
 a {
 	color: green;
 }
+
+/* Homepage */
+
+#home {
+	background: no-repeat center center fixed;
+	background-image: url(Images/background.jpg);
+	background-size: cover;
+}
+.landing {
+	width: 100%;
+}
+.landingBackground {
+	background-color: white;
+	width: 300px;
+}
+.landing h1 {
+	margin: auto;
+	padding-bottom: 15px;
+	width: 100%;
+}
 .center {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-/* Homepage */
-
-.landingImg {
-	height: 100%;
+.homenav li {
+	padding-bottom: 5px;
+	font-size: 18px;
 }
 .socialMedia {
 	margin-top: 15px;
@@ -65,7 +74,6 @@ a svg {
 	list-style-type: none;
 	margin-left: -5px;
 	padding: 0;
-	text-decoration: none;
 }
 li a {
 	text-decoration: none;
@@ -76,12 +84,12 @@ li a:hover {
 	text-decoration: none;
 }
 .nav_link {
-	color: #777777;
+	color: BABABA;
 	transition: color .3s;
 }
 .nav_link.active {
 	font-family: 'Source Code Pro', bold;
-	color: green;
+	color: 333333;
 }
 #hci {
 	margin-left: -10px;
@@ -89,10 +97,6 @@ li a:hover {
 
 /* Body */
 
-html .landing {
-	!important width: 100%;
-}
-html {}
 .page {
 	height: 100%;
 	text-align: center;
@@ -103,45 +107,54 @@ html {}
 	padding-bottom: 10px;
 }
 h1 {
-	font-size: 44px;
-	font-family: 'Source Sans Pro';
-	font-weight: 700;
+	font-size: 48px;
+	font-family: Montserrat;
 	color: black;
+	/* reduces space under h1 */
 	text-align: center;
 }
 h2 {
 	font-size: 24px;
-	font-family: 'Source Sans Pro';
-	font-weight: 700;
+	font-family: Montserrat;
 	color: black;
 }
 p {
-	font-size: 12px;
 	font-family: 'Source Code Pro', monospace;
-	font-weight: 300;
-	color: #000000;
-}
-#description {
-	text-align: left;
+	color: #323232;
 }
 .linkText {
+	z-index: 1;
 	color: white;
+	font-family: Montserrat;
 	font-size: 32;
-	font-family: 'Source Sans Pro';
-	font-weight: 700;
+	/* Center of text box */
 	text-align: center;
-	width: 100%
+	/* Let's you put it exactly where you want to */
+	position: absolute;
+	/* Moves it down to the center of the div */
+	top: 40%;
+	/* Lets the text box fill the entire width of the div */
+	width: 100%;
 }
 .thumbPhoto {
 	transition: all .3s;
 	background: none;
 	position: relative;
 }
-.thumbPhoto:hover {
-	transform: scale(1.04, 1.04);
-	transform-origin: center;
-	box-shadow: 0px 0px 40px grey;
-	transform-origin: center;
+.thumbPhoto:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+}
+.thumbPhoto:hover:after {
+	background: rgba(0, 0, 0, 0.5);
 }
 .videoWrapper {
 	position: relative;
@@ -151,21 +164,17 @@ p {
 	height: 0;
 }
 .videoWrapper iframe {
-	padding: 12.5px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-.my-gallery img {
-	transition: all .3s;
-}
-.my-gallery img:hover {
-	transform: scale(1.04, 1.04);
-	border-radius: 3px;
-	box-shadow: 0px 0px 40px grey;
-	transform-origin: center;
+#meWrapper img {
+	/* These 3 below working together centers the image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Footer */
@@ -198,13 +207,7 @@ footer {
 		border-color: rgb(52, 52, 52);
 		width: 100px;
 	}
-	#landingTitle {
-		margin-bottom: 0px;
-		padding-left: 12.5px;
-		padding-right: 12.5px;
-		padding-bottom: 0px;
-		padding-top: 10px;
-	}
+	.pageContent img {}
 	.pageContent p {
 		text-align: left;
 	}
@@ -257,9 +260,6 @@ footer {
 		width: 60px;
 		margin-bottom: 5px;
 	}
-	.homenav #logo {
-		padding-bottom: 10px;
-	}
 	.pageHeader {
 		margin: 12.5px;
 	}
@@ -274,7 +274,9 @@ footer {
 	.my-gallery figure {
 		padding: 12.5px;
 	}
-	.videoWrapper iframe {}
+	.videoWrapper iframe {
+		padding: 12.5px;
+	}
 	.codeImage {
 		padding: 12.5px;
 	}
@@ -286,7 +288,7 @@ footer {
 		max-width: 300px;
 	}
 	footer {
-		padding: 50px 0;
+		padding-top: 20px;
 		font-size: 12;
 	}
 }
@@ -301,24 +303,23 @@ footer {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-	ul a {
-		font-size: 44px;
+	.nav {
+		font-size: 30px;
+		padding-top: 30px;
+	}
+	.homenav ul {
+		font-size: 20px;
 		list-style-type: none;
 	}
 	#logo {
 		width: 150px;
-		padding-top: 30px;
-		padding-bottom: 20px;
-	}
-	.homenav #logo {
-		padding-top: 30px;
-		padding-bottom: 20px;
+		margin-bottom: 5px;
 	}
 	h1 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 	h2 {
-		font-size: 64px;
+		font-size: 40px;
 	}
 	hr {
 		margin-top: 40px;
@@ -330,12 +331,14 @@ footer {
 	.pageContent img {
 		padding: 20px;
 	}
+	.landing h1 {
+		font-size: 50px;
+	}
 	p {
-		font-size: 30px;
+		font-size: 36px;
 	}
 	li.nav_item {
 		display: inline;
-		font-size: 44px;
 	}
 	li.logo {
 		padding-bottom: 10px;
@@ -351,13 +354,7 @@ footer {
 	}
 	#meWrapper {
 		/* To add space when it's stacked */
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 		margin-bottom: 40px;
-	}
-	#meWrapper img {
-		max-width: 500px;
 	}
 	.my-gallery figure {
 		padding-bottom: 15px;
@@ -366,8 +363,15 @@ footer {
 	.videoWrapper iframe {
 		padding: 15px;
 	}
+	.codeImage {
+		padding: 15px;
+		max-width: 500px;
+	}
 	.linkText {
-		font-size: 64px;
+		font-size: 80px;
+	}
+	#meWrapper img {
+		max-width: 500px;
 	}
 	footer {
 		padding-top: 40px;
